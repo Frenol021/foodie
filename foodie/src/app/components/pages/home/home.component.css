@@ -1,0 +1,68 @@
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+
+}
+
+li a{
+  display: flex;
+
+  overflow: hidden;
+  border-radius: 1rem;
+  flex-direction: column;
+  margin: 0.5rem;
+  border: 1px solid black;
+}
+li a:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+img{
+  height: 320px;
+  width: 320px;
+
+}
+
+.content{
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  position: relative;
+  height: 7rem;
+
+}
+
+.favourite{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+.stars{
+  margin-bottom: 0.2rem;
+}
+.product-description{
+  display: flex;
+justify-content: space-between;
+  align-items: flex-start;
+}
+
+.origin{
+  flex: 9;
+}
+
+.cook{
+  flex: 3;
+  text-align: right;
+  text-decoration: none;
+
+}
+
+
+.price{
+  position: absolute;
+  margin-top: 20px;
+  color: black;
+}
