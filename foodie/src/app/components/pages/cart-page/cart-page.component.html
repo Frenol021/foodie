@@ -1,0 +1,40 @@
+<app-title title="cart-page" margin="1.5rem 0 0 2.5rem"></app-title>
+<div class="container">
+  <ul>
+    <li *ngFor="let item of cart.items">
+      <div class="image">
+        <img [src]="item.food.imageUrl" alt="{{item.food.name}}"/>
+        </div>
+        <div>
+          <a routerLink="/food/{{item.food.id}}">
+            {{item.food.name}}
+          </a>
+        </div>
+        <div>
+          <select #selectQuantity
+          [value] ="item.quantity"
+          (change)="changeQuantity(item, selectQuantity.value)">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        </div>
+        <div>
+          {{item.price | currency}}
+        </div>
+        <div>
+          <button class="remove" (click)="removeToCart(item)">
+            remove
+          </button>
+        </div>
+    </li>
+  </ul>
+  <div class="checkout">
+    <div>
+      <div class="food-count">quantity: {{cart.totalCount}}</div>
+      <div class="foodprice">total: {{cart.totalPrice |currency}}</div>
+    </div>
+    <a routerLink="/checkout-page">procced checkout</a>
+  </div>
+</div>

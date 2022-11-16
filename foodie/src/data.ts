@@ -16,7 +16,7 @@ export const the_food: Food[] =[
   },
 
   {
-    id: '1',
+    id: '2',
     name:'pizza',
     price: 2345,
     favourite: true,
@@ -28,7 +28,7 @@ export const the_food: Food[] =[
   },
 
   {
-    id: '1',
+    id: '3',
     name:'burger',
     price: 2345,
     favourite: true,
@@ -45,5 +45,5 @@ export const the_food: Food[] =[
 export const sample_tag:Tag[]= [
   {name:'All', count: 6},
   {name:'fastfood', count: 3},
-  {name:'pizza', count:2}
+  {name:'pizza', count:1}
 ]
