@@ -9,4 +9,5 @@ export class Food{
   origin!: string[];
   cookTime!: string;
   static tag: any;
+
 }
